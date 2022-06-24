@@ -1,0 +1,133 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 导航区 */
+nav {
+    height: 50px;
+    background-color:rosybrown;
+    display: flex;
+    /* 弹性布局 */
+    justify-content: space-between;
+    /* 均匀排列每个元素首个元素放置于起点，末尾元素放置于终点 */
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: large;
+}
+
+nav ul li {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:slategrey;
+}
+
+.dropdown {
+    display: none;
+    /* 让下拉列表平铺 */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    /* 设置下拉模块 */
+    position: absolute;
+    left:0;
+    top:100%;
+}
+
+/* 下拉列表整体 */
+nav ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    background-color:rosybrown;
+
+}
+
+nav ul li:hover .dropdown ul li {
+    width: 100px;
+    padding: 10px;
+    margin-left: 0;
+    border: 2px;
+}
+
+.day {
+    margin: auto;
+}
+
+section {
+    margin: auto;
+}
+
+img {
+    width: 350px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.img {
+    width: 1095px;
+    margin: auto;
+}
+
+.image {
+    margin: auto;
+    width: 790px;
+}
+
+h1 {
+    color: darkslateblue;
+    font-family: KaiTi;
+    font-size: 24px;
+    margin: 20px;
+    margin-left: 45px;
+    text-align: center;
+}
+
+h2 {
+    color:rebeccapurple;
+    font-family: KaiTi;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* 页脚区 */
+footer {
+    background-color: #ae9a75;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          12px;
+    margin:           0px;
+    font-size:        90%;
+    clear: both;
+    margin: 0px 10px 10px 10px;
+  }

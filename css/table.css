@@ -1,0 +1,66 @@
+body { 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:rgb(227, 214, 196);
+  margin:auto;
+}
+  
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+  margin: 20px;
+  text-align: center;
+}
+  
+h2 { 
+  font-size: 110%; 
+  margin: 20px;
+  text-align: center;
+}
+  
+form {
+	display: table;
+	/* 定义为表单 */
+	padding: 10px;
+	border: thin dotted #8ea8b8;
+	background-color: #ced9ea;
+  margin: auto;
+}
+
+form textarea {
+	width: 450px;
+	height: 200px;
+}
+
+div.tableRow {
+	display: table-row;
+	/* 作为表格行 */
+}
+
+div.tableRow p {
+	display: table-cell;
+	/* 设置为单元格 */
+	vertical-align: top;
+	/* 向上对齐，不设置的时候默认居中 */
+	padding: 3px;
+}
+
+/* 靠单元格右端放置 */
+div.tableRow p:first-child {
+	text-align: right;
+}
+
+p.heading {
+	font-weight: bold;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+}
+
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+}

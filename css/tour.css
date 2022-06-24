@@ -1,0 +1,141 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 导航区 */
+nav {
+    height: 50px;
+    background-color:rosybrown;
+    display: flex;
+    /* 弹性布局 */
+    justify-content: space-between;
+    /* 均匀排列每个元素首个元素放置于起点，末尾元素放置于终点 */
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: large;
+}
+
+nav ul li {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:slategrey;
+}
+
+.dropdown {
+    display: none;
+    /* 让下拉列表平铺 */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    /* 设置下拉模块 */
+    position: absolute;
+    /* 绝对定位 */
+    left:0;
+    top:100%;
+}
+
+/* 下拉列表整体 */
+nav ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    background-color:rosybrown;
+
+}
+
+nav ul li:hover .dropdown ul li {
+    width: 100px;
+    padding: 10px;
+    margin-left: 0;
+    border: 2px;
+}
+
+.sub {
+    top: 40.67px!important;
+    border: none;
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    /* z-index 属性设置元素的堆叠顺序，拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面 */
+    visibility: hidden;
+    /* 规定元素是否可见，元素是不可见 */
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 0px;
+}
+
+h1 {
+    color: cadetblue;
+    font-family: KaiTi;/*楷体*/
+    padding-left: 20px;
+    margin: 30px;
+}
+
+div#pro {
+    width: 1000px;
+    height: 293px;
+    margin-left: 20px;
+}
+
+.image {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    float: left;
+    margin-left: 20px;
+}
+
+.ph {
+    width: 650px;
+    /* float:right; */
+    /* margin-left: 450px; */
+    margin-left: 450px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+a:link{
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* 页脚区 */
+footer {
+    background-color: #ae9a75;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          12px;
+    margin:           0px;
+    font-size:        90%;
+    clear: both;
+    margin: 0px 10px 10px 10px;
+  }

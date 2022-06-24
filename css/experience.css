@@ -1,0 +1,174 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:antiquewhite;
+    width: 100%;
+}
+
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 导航区 */
+nav {
+    height: 50px;
+    background-color:rosybrown;
+    display: flex;
+    /* 弹性布局 */
+    justify-content: space-between;
+    /* 均匀排列每个元素首个元素放置于起点，末尾元素放置于终点 */
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: large;
+}
+
+nav ul li {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:slategrey;
+}
+
+.dropdown {
+    display: none;
+    /* 让下拉列表平铺 */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    /* 设置下拉模块 */
+    position: absolute;
+    left:0;
+    top:100%;
+}
+
+/* 下拉列表整体 */
+nav ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    background-color:rosybrown;
+}
+
+nav ul li:hover .dropdown ul li {
+    width: 100px;
+    padding: 10px;
+    margin-left: 0;
+}
+
+section {
+    margin: auto;/*凝胶布局*/
+}
+
+h1 {
+    color: darkslateblue;
+    font-family: KaiTi;
+    font-size: 24px;
+    margin: 20px;
+}
+
+h2 {
+    color:rebeccapurple;
+    font-family: KaiTi;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.box1 {
+    width: 48%;
+    float: left;
+    background-color: rgba(243, 238, 233, 0.4);
+}
+
+.box2 {
+    width: 52%;
+    float: left;
+    background-color: rgba(243, 238, 233, 0.4);
+}
+
+video {
+    margin: 20px;
+    margin-left: 35px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 88%;
+}
+
+.box1 p {
+    width: 88%;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.box2 p {
+    width: 88%;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+img {
+    margin: 20px;
+    height: 300px;
+    margin-right: 0;
+}
+
+
+
+section {
+    display: block;
+    margin: 10px;
+}
+
+section.num {
+    display: table-cell;
+}
+
+section.num p {
+    margin-left: 0px;
+}
+
+a:link{
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* 页脚区 */
+footer {
+    background-color: #ae9a75;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          12px;
+    margin:           0px;
+    font-size:        90%;
+    clear: both;
+    margin: 0px 10px 10px 10px;
+  }

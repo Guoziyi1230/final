@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tablb</title>
+	<link rel="stylesheet" href="../css/table.css">
+  </head>
+  <body>
+
+    <h1>小锅的反馈单</h1>
+    <h2>请留下您的意见！</h2>
+
+    <form action="http://www.table.com/processorder.php" method="post">
+	<!-- 选择身份 -->
+		<div class="tableRow">
+		<p>
+			<label for="identity">
+				请选择您的身份:
+			</label>
+        <!-- for中的值和id中的要一样 -->
+		</p>
+		<p>
+            <select name="iden" id="identity">
+              <option value="teacher">老师</option>
+              <option value="student">学生</option>
+              <option value="other">其他</option>
+            </select>
+		</p>
+	</div>
+
+    <div class="tableRow">
+		<p class="heading"> 请留下您的信息： </p>
+		<p></p>
+	</div>
+
+	<!-- 姓名 -->
+    <div class="tableRow">
+		<p> 姓名: </p>
+		<p> <input type="text" name="name" value="" placeholder="张三 " required> </p>
+	</div>
+	<!-- 联系方式 -->
+	<div class="tableRow">
+		<p> 联系方式: </p>
+		<p> <input type="tel" name="phone" value="" placeholder="12345678900" required> </p>
+	</div>
+
+	<!-- 选择提出意见的页面 -->
+    <div class="tableRow">
+		<p> 请选择您要提出意见的页面: </p>
+		<p>
+            <!-- 建立复选框 -->
+            <input type="checkbox" name="advice[]" value="giftwrap"> 首页 
+            <input type="checkbox" name="advice[]" value="giftwrap"> 个人经历<br>
+            <input type="checkbox" name="advice[]" value="giftwrap"> 厦门
+            <input type="checkbox" name="advice[]" value="giftwrap"> 旅游<br>
+            <input type="checkbox" name="advice[]" value="giftwrap"> 兰州
+            <input type="checkbox" name="advice[]" value="giftwrap"> 长沙
+		</p>
+	</div>
+	
+	<!-- 意见文本 -->
+	<div class="tableRow">
+		<p> 您的意见 : </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	<!-- 提交按钮 -->
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="提交"> </p>
+	</div>
+    </form>
+  </body>
+</html>
+

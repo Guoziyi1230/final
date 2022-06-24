@@ -1,0 +1,132 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:antiquewhite;
+    line-height: 1.5em;/*将行高调整为1.5倍*/
+    margin: auto;
+}
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 导航区 */
+nav {
+    height: 50px;
+    background-color:rosybrown;
+    display: flex;
+    /* 弹性布局 */
+    justify-content: space-between;
+    /* 均匀排列每个元素首个元素放置于起点，末尾元素放置于终点 */
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: large;
+}
+
+nav ul li {
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:slategrey;
+}
+
+.dropdown {
+    display: none;
+    /* 让下拉列表平铺 */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    /* 设置下拉模块 */
+    position: absolute;
+    left:0;
+    top:100%;
+}
+
+/* 下拉列表整体 */
+nav ul li:hover .dropdown ul{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    background-color:rosybrown;
+
+}
+
+nav ul li:hover .dropdown ul li {
+    width: 100px;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.box {
+    border-color: rgb(176, 147, 147);
+    border-spacing: 12px;
+}
+
+section {
+    display: block;
+    margin: 10px;
+}
+
+section.num {
+    display: table-cell;
+    /* 单元格 */
+    background-color: #cee6f1e0;
+    /* width: 30%; */
+    padding: 12px;
+    /* vertical-align: top; */
+}
+
+a:link{
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(66, 12, 152);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(104, 35, 189);
+}
+
+.table {
+    float: left;   
+}
+
+/* 页脚区 */
+footer {
+    background-color: #ae9a75;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          12px;
+    margin:           0px;
+    font-size:        90%;
+    clear: both;
+    margin: 0px 10px 10px 10px;
+  }
